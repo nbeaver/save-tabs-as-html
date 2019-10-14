@@ -4,4 +4,6 @@
 - [ ] Skip private tabs (`tab.incognito == true`).
 - [ ] Should it save all tabs, or just tabs in the current window?
 - [ ] Include tab.id / tab.index?
-- [ ] Format downloaded HTML.
+- [ ] Indent/format downloaded HTML.
+  - <https://stackoverflow.com/questions/45046868/serializing-dynamically-created-html-with-indentation>
+  - <https://stackoverflow.com/questions/376373/pretty-printing-xml-with-javascript/>
