@@ -33,6 +33,10 @@ function saveTabs(tabs) {
 function tabsToHTML(tabs, now) {
   var allTabs = [];
   for (let tab of tabs) {
+    if (tab.incognito === true) {
+      // skip private tabs
+      continue;
+    }
     // tab.url and tab.title require the `tabs` permission
     var tabInfo = {
       'title' : tab.title,
