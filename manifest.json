@@ -1,0 +1,21 @@
+{
+  "name": "Save tabs as HTML",
+  "description": "Save list of open tabs as an HTML file.",
+  "manifest_version": 2,
+  "version": "0.1",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "permissions": [
+    "tabs",
+    "downloads"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon.svg",
+    "default_title": "Save tabs as HTML."
+  },
+  "background": {
+    "scripts": ["save_tabs.js"]
+  }
+}
