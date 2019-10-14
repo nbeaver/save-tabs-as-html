@@ -7,10 +7,23 @@ function onError(error) {
   console.log(`Error : ${error}`);
 }
 
+function getDateYYYYMMDD(timestamp) {
+  var month_from_one = timestamp.getMonth() + 1;
+  var day = timestamp.getDate();
+  var year = timestamp.getFullYear();
+  var month_padded = month_from_one.toString().padStart(2, '0');
+  var day_padded = day.toString().padStart(2, '0');
+  var year_padded = year.toString().padStart(4, '0');
+  var date_string = year_padded + '-' + month_padded + '-' + day_padded;
+  return date_string;
+}
+
 function saveTabs(tabs) {
   var now = new Date();
+
   function getFilename(timestamp) {
-    filename = 'tabs_' + timestamp.getTime() + '.html';
+    var yyyymmdd = getDateYYYYMMDD(timestamp);
+    var filename = 'tabs_' + yyyymmdd + '_' + timestamp.getTime() + '.html';
     return filename;
   }
   var payload = tabsToHTML(tabs, now);
@@ -59,6 +72,7 @@ function tabsToHTML(tabs, now) {
   var ISOString = document.createElement('li');
   var localeString = document.createElement('li');
   var JSONString = document.createElement('li');
+  var YYYYMMDDString = document.createElement('li');
   var getTime = document.createElement('li');
 
   tabCount.appendChild(
@@ -71,6 +85,9 @@ function tabsToHTML(tabs, now) {
     document.createTextNode('Locale date: ' + now.toLocaleString()));
   JSONString.appendChild(
     document.createTextNode('JSON date: ' + now.toJSON()));
+  YYYYMMDDString.appendChild(
+    document.createTextNode('YYYY-MM-DD with timezone: ' + getDateYYYYMMDD(now)
+  ));
   getTime.appendChild(
     document.createTextNode('Milliseconds since Unix epoch: ' + now.getTime()));
 
@@ -79,6 +96,7 @@ function tabsToHTML(tabs, now) {
   newUnorderedList.appendChild(ISOString);
   newUnorderedList.appendChild(localeString);
   newUnorderedList.appendChild(JSONString);
+  newUnorderedList.appendChild(YYYYMMDDString);
   newUnorderedList.appendChild(getTime);
 
   // TODO: would this be better as an ordered list?
