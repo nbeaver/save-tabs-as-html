@@ -3,3 +3,4 @@
 - [ ] Skip private tabs (`tab.incognito == true`).
 - [ ] Should it save all tabs, or just tabs in the current window?
 - [ ] Include tab.id / tab.index?
+- [ ] Format downloaded HTML.
