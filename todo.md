@@ -1,7 +1,7 @@
 - [x] Find a suitable icon.
 - [x] Use `serializeToString` instead of `outerHTML`
   - <https://stackoverflow.com/questions/817218/how-to-get-the-entire-document-html-as-a-string>
-- [ ] Skip private tabs (`tab.incognito == true`).
+- [x] Skip private tabs (`tab.incognito == true`).
 - [ ] Should it save all tabs, or just tabs in the current window?
 - [ ] Include tab.id / tab.index?
 - [ ] Indent/format downloaded HTML.
