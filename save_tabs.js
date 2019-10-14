@@ -42,7 +42,6 @@ function tabsToHTML(tabs, now) {
       'title' : tab.title,
       'url' : tab.url,
     };
-    // TODO: skip private tabs.
     allTabs.push(tabInfo);
   }
   var doc = document.implementation.createHTMLDocument('browser tabs');
