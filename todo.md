@@ -2,7 +2,8 @@
 - [x] Use `serializeToString` instead of `outerHTML`
   - <https://stackoverflow.com/questions/817218/how-to-get-the-entire-document-html-as-a-string>
 - [x] Skip private tabs (`tab.incognito == true`).
-- [ ] Should it save all tabs, or just tabs in the current window?
+- [ ] Add sections for different windows
+- [ ] Add subsections for pinned/unpinned tabs
 - [ ] Include tab.id / tab.index?
 - [ ] Indent/format downloaded HTML.
   - <https://stackoverflow.com/questions/45046868/serializing-dynamically-created-html-with-indentation>
