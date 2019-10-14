@@ -24,7 +24,7 @@ function saveTabs(tabs) {
     url: payloadURL,
     filename: payload_filename,
     conflictAction: 'uniquify',
-    saveAs: false,
+    saveAs: true,
   });
   // Firefox for Android raises an error if `saveAs` is set to `true`.
   // The parameter is ignored when `saveAs` is `false` or not included.
