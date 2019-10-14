@@ -61,7 +61,7 @@ function tabsToHTML(tabs, now) {
   ISOString.appendChild(document.createTextNode("ISO date: " + now.toISOString()));
   localeString.appendChild(document.createTextNode("Locale date: " + now.toLocaleString()));
   JSONString.appendChild(document.createTextNode("JSON date: " + now.toJSON()));
-  getTime.appendChild(document.createTextNode("Unix timestamp: " + now.getTime()));
+  getTime.appendChild(document.createTextNode("Milliseconds since Unix epoch: " + now.getTime()));
 
   newUnorderedList.appendChild(tabCount);
   newUnorderedList.appendChild(dateString);
