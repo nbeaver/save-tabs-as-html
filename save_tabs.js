@@ -4,14 +4,14 @@ function mainAction() {
 }
 
 function onError(error) {
-  console.log(`Error: ${error}`);
+  console.log(`Error : ${error}`);
 }
 
 function saveTabs(tabs) {
   var now = new Date();
   function getFilename(timestamp) {
-    filename = "tabs_" + timestamp.getTime() + ".html"
-    return filename
+    filename = 'tabs_' + timestamp.getTime() + '.html';
+    return filename;
   }
   var payload = tabsToHTML(tabs, now);
   // TODO: can this be formatted easily?
@@ -20,7 +20,7 @@ function saveTabs(tabs) {
   var payload_filename = getFilename(now);
   var downloading = browser.downloads.download({
     url: payloadURL,
-    filename : payload_filename,
+    filename: payload_filename,
     conflictAction: 'uniquify',
     saveAs: false,
   });
@@ -33,18 +33,18 @@ function tabsToHTML(tabs, now) {
   for (let tab of tabs) {
     // tab.url and tab.title require the `tabs` permission
     var tabInfo = {
-      "title" : tab.title,
-      "url" : tab.url,
+      'title' : tab.title,
+      'url' : tab.url,
     };
     // TODO: skip private tabs.
-    allTabs.push(tabInfo)
+    allTabs.push(tabInfo);
   }
   var newHTML = document.createElement('html');
   var newHead = document.createElement('head');
   var newTitle = document.createElement('title');
-  newTitle.text = "browser tabs";
+  newTitle.text = 'browser tabs';
   var newMeta = document.createElement('meta');
-  newMeta.setAttribute("charset", "utf-8");
+  newMeta.setAttribute('charset', 'utf-8');
   var newBody = document.createElement('body');
 
   var newUnorderedList = document.createElement('ul');
@@ -56,12 +56,18 @@ function tabsToHTML(tabs, now) {
   var JSONString = document.createElement('li');
   var getTime = document.createElement('li');
 
-  tabCount.appendChild(document.createTextNode(allTabs.length + " tabs"));
-  dateString.appendChild(document.createTextNode("Date: " + now.toString()));
-  ISOString.appendChild(document.createTextNode("ISO date: " + now.toISOString()));
-  localeString.appendChild(document.createTextNode("Locale date: " + now.toLocaleString()));
-  JSONString.appendChild(document.createTextNode("JSON date: " + now.toJSON()));
-  getTime.appendChild(document.createTextNode("Milliseconds since Unix epoch: " + now.getTime()));
+  tabCount.appendChild(
+    document.createTextNode(allTabs.length + ' tabs'));
+  dateString.appendChild(
+    document.createTextNode('Date: ' + now.toString()));
+  ISOString.appendChild(
+    document.createTextNode('ISO date: ' + now.toISOString()));
+  localeString.appendChild(
+    document.createTextNode('Locale date: ' + now.toLocaleString()));
+  JSONString.appendChild(
+    document.createTextNode('JSON date: ' + now.toJSON()));
+  getTime.appendChild(
+    document.createTextNode('Milliseconds since Unix epoch: ' + now.getTime()));
 
   newUnorderedList.appendChild(tabCount);
   newUnorderedList.appendChild(dateString);
