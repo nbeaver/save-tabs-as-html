@@ -1,1 +1,5 @@
-- [ ] Find a suitable icon.
+- [x] Find a suitable icon.
+- [ ] Determine if DOCTYPE is necessary.
+- [ ] Skip private tabs (`tab.incognito == true`).
+- [ ] Should it save all tabs, or just tabs in the current window?
+- [ ] Include tab ID?
