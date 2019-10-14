@@ -68,6 +68,7 @@ function tabsToHTML(tabs, now) {
   var newUnorderedList = document.createElement('ul');
 
   var tabCount = document.createElement('li');
+  var userAgent = document.createElement('li');
   var dateString = document.createElement('li');
   var ISOString = document.createElement('li');
   var localeString = document.createElement('li');
@@ -77,6 +78,8 @@ function tabsToHTML(tabs, now) {
 
   tabCount.appendChild(
     document.createTextNode(allTabs.length + ' tabs'));
+  userAgent.appendChild(
+    document.createTextNode('User agent: ' + navigator.userAgent));
   dateString.appendChild(
     document.createTextNode('Date: ' + now.toString()));
   ISOString.appendChild(
@@ -86,12 +89,13 @@ function tabsToHTML(tabs, now) {
   JSONString.appendChild(
     document.createTextNode('JSON date: ' + now.toJSON()));
   YYYYMMDDString.appendChild(
-    document.createTextNode('YYYY-MM-DD with timezone: ' + getDateYYYYMMDD(now)
+    document.createTextNode('YYYY-MM-DD (local): ' + getDateYYYYMMDD(now)
   ));
   getTime.appendChild(
     document.createTextNode('Milliseconds since Unix epoch: ' + now.getTime()));
 
   newUnorderedList.appendChild(tabCount);
+  newUnorderedList.appendChild(userAgent);
   newUnorderedList.appendChild(dateString);
   newUnorderedList.appendChild(ISOString);
   newUnorderedList.appendChild(localeString);
