@@ -9,6 +9,9 @@ $(ZIP): save_tabs.js manifest.json icons/icon.svg
 readme.html : readme.rst
 	rst2html $< $@
 
+todo.html : todo.md
+	markdown $< > $@
+
 .PHONY : lint
 lint :
 	gjslint --nojsdoc save_tabs.js
