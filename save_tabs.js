@@ -15,7 +15,9 @@ function saveTabs(tabs) {
   }
   var payload = tabsToHTML(tabs, now);
   // TODO: can this be formatted easily?
-  var payloadBlob = new Blob([payload.outerHTML], {type: 'text/html'});
+  var serializer = new XMLSerializer();
+  var HTMLString = serializer.serializeToString(payload);
+  var payloadBlob = new Blob([HTMLString], {type: 'text/html'});
   var payloadURL = URL.createObjectURL(payloadBlob);
   var payload_filename = getFilename(now);
   var downloading = browser.downloads.download({
@@ -39,13 +41,13 @@ function tabsToHTML(tabs, now) {
     // TODO: skip private tabs.
     allTabs.push(tabInfo);
   }
-  var newHTML = document.createElement('html');
-  var newHead = document.createElement('head');
-  var newTitle = document.createElement('title');
-  newTitle.text = 'browser tabs';
+  var doc = document.implementation.createHTMLDocument('browser tabs');
+  // https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createHTMLDocument
+  // creates html, head, title, and body
+
   var newMeta = document.createElement('meta');
   newMeta.setAttribute('charset', 'utf-8');
-  var newBody = document.createElement('body');
+  doc.head.appendChild(newMeta);
 
   var newUnorderedList = document.createElement('ul');
 
@@ -93,13 +95,9 @@ function tabsToHTML(tabs, now) {
     newDescriptionList.appendChild(newDescriptionTerm);
     newDescriptionList.appendChild(newDescriptionDetails);
   }
-  newBody.appendChild(newUnorderedList);
-  newBody.appendChild(newDescriptionList);
-  newHead.appendChild(newMeta);
-  newHead.appendChild(newTitle);
-  newHTML.append(newHead);
-  newHTML.append(newBody);
-  return newHTML;
+  doc.body.appendChild(newUnorderedList);
+  doc.body.appendChild(newDescriptionList);
+  return doc;
 }
 
 browser.browserAction.onClicked.addListener(mainAction);
