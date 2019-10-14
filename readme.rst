@@ -3,7 +3,44 @@ similar to the `Netscape bookmark format`_.
 
 .. _Netscape bookmark format: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753582(v=vs.85)?redirectedfrom=MSDN
 
-Here's an example of its output::
+The idea is to turn browser tabs into an HTML document
+that looks something like this:
+
+    - 9 tabs
+    - Date: Mon Oct 14 2019 11:55:30 GMT-0400 (Eastern Daylight Time)
+    - ISO date: 2019-10-14T15:55:30.314Z
+    - Locale date: 10/14/2019, 11:55:30 AM
+    - JSON date: 2019-10-14T15:55:30.314Z
+    - Unix timestamp: 1571068530314
+
+    `Task Manager <about:performance>`_
+      `about:performance <about:performance>`_
+
+    `\<dl\>: The Description List element - HTML: Hypertext Markup Language | MDN <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl>`_
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+
+    `about:debugging - Firefox Developer Tools | MDN <https://developer.mozilla.org/en-US/docs/Tools/about:debugging>`_
+      https://developer.mozilla.org/en-US/docs/Tools/about:debugging
+
+    `\<title\>: The Document Title element - HTML: Hypertext Markup Language | MDN <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title>`_
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
+
+    `tabs.Tab - Mozilla | MDN <https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab>`_
+      https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab
+
+    `Add-ons Manager <about:addons>`_
+      `about:addons <about:addons>`_
+
+    `Debugging - Runtime / this-firefox <about:debugging#/runtime/this-firefox>`_
+      `about:debugging#/runtime/this-firefox <about:debugging#/runtime/this-firefox>`_
+
+    `الشرق الأوسط | ara.reuters.com <https://ara.reuters.com/news/topNews>`_
+      https://ara.reuters.com/news/topNews
+
+    `首页 | 路透中文网 <https://cn.reuters.com/>`_
+      https://cn.reuters.com/
+
+Here's an example of actual output::
 
     <html>
       <head>
@@ -78,38 +115,3 @@ Here's an example of its output::
       </body>
     </html>
 
-Which looks roughly like this:
-
-    - 9 tabs
-    - Date: Mon Oct 14 2019 11:55:30 GMT-0400 (Eastern Daylight Time)
-    - ISO date: 2019-10-14T15:55:30.314Z
-    - Locale date: 10/14/2019, 11:55:30 AM
-    - JSON date: 2019-10-14T15:55:30.314Z
-    - Unix timestamp: 1571068530314
-
-    `Task Manager <about:performance>`_
-      `about:performance <about:performance>`_
-
-    `\<dl\>: The Description List element - HTML: Hypertext Markup Language | MDN <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl>`_
-      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
-
-    `about:debugging - Firefox Developer Tools | MDN <https://developer.mozilla.org/en-US/docs/Tools/about:debugging>`_
-      https://developer.mozilla.org/en-US/docs/Tools/about:debugging
-
-    `\<title\>: The Document Title element - HTML: Hypertext Markup Language | MDN <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title>`_
-      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
-
-    `tabs.Tab - Mozilla | MDN <https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab>`_
-      https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab
-
-    `Add-ons Manager <about:addons>`_
-      `about:addons <about:addons>`_
-
-    `Debugging - Runtime / this-firefox <about:debugging#/runtime/this-firefox>`_
-      `about:debugging#/runtime/this-firefox <about:debugging#/runtime/this-firefox>`_
-
-    `الشرق الأوسط | ara.reuters.com <https://ara.reuters.com/news/topNews>`_
-      https://ara.reuters.com/news/topNews
-
-    `首页 | 路透中文网 <https://cn.reuters.com/>`_
-      https://cn.reuters.com/
