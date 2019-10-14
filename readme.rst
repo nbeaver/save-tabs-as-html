@@ -6,7 +6,7 @@ similar to the `Netscape bookmark format`_.
 The idea is to turn browser tabs into an HTML document
 that looks something like this:
 
-    - 9 tabs
+    - 7 tabs
     - Date: Mon Oct 14 2019 11:55:30 GMT-0400 (Eastern Daylight Time)
     - ISO date: 2019-10-14T15:55:30.314Z
     - Locale date: 10/14/2019, 11:55:30 AM
@@ -28,24 +28,19 @@ that looks something like this:
     `tabs.Tab - Mozilla | MDN <https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab>`_
       https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab
 
-    `Add-ons Manager <about:addons>`_
-      `about:addons <about:addons>`_
-
-    `Debugging - Runtime / this-firefox <about:debugging#/runtime/this-firefox>`_
-      `about:debugging#/runtime/this-firefox <about:debugging#/runtime/this-firefox>`_
-
     `الشرق الأوسط | ara.reuters.com <https://ara.reuters.com/news/topNews>`_
       https://ara.reuters.com/news/topNews
 
     `首页 | 路透中文网 <https://cn.reuters.com/>`_
       https://cn.reuters.com/
 
-Here's an example of actual output::
+Here's an example of actual output (reformatted for readability)::
 
-    <html>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
-        <meta charset="utf-8">
         <title>browser tabs</title>
+        <meta charset="utf-8" />
       </head>
       <body>
         <ul>
@@ -88,18 +83,6 @@ Here's an example of actual output::
           <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab</a>
           </dd>
           <dt>
-          <a href="about:addons">Add-ons Manager</a>
-          </dt>
-          <dd>
-          <a href="about:addons">about:addons</a>
-          </dd>
-          <dt>
-          <a href="about:debugging#/runtime/this-firefox">Debugging - Runtime / this-firefox</a>
-          </dt>
-          <dd>
-          <a href="about:debugging#/runtime/this-firefox">about:debugging#/runtime/this-firefox</a>
-          </dd>
-          <dt>
           <a href="https://ara.reuters.com/news/topNews">الشرق الأوسط | ara.reuters.com</a>
           </dt>
           <dd>
@@ -114,4 +97,3 @@ Here's an example of actual output::
         </dl>
       </body>
     </html>
-
