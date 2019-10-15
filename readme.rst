@@ -3,6 +3,8 @@ similar to the `Netscape bookmark format`_.
 
 .. _Netscape bookmark format: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753582(v=vs.85)?redirectedfrom=MSDN
 
+https://addons.mozilla.org/en-US/firefox/addon/save-tabs-to-html-file/
+
 The idea is to turn browser tabs into an HTML document
 that looks something like this:
 
