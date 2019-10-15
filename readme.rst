@@ -7,11 +7,13 @@ The idea is to turn browser tabs into an HTML document
 that looks something like this:
 
     - 7 tabs
-    - Date: Mon Oct 14 2019 11:55:30 GMT-0400 (Eastern Daylight Time)
-    - ISO date: 2019-10-14T15:55:30.314Z
-    - Locale date: 10/14/2019, 11:55:30 AM
-    - JSON date: 2019-10-14T15:55:30.314Z
-    - Unix timestamp: 1571068530314
+    - User agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0
+    - Date: Mon Oct 14 2019 20:08:24 GMT-0400 (Eastern Daylight Time)
+    - ISO date: 2019-10-15T00:08:24.823Z
+    - Locale date: 10/14/2019, 8:08:24 PM
+    - JSON date: 2019-10-15T00:08:24.823Z
+    - YYYY-MM-DD (local): 2019-10-14
+    - Milliseconds since Unix epoch: 1571098104823
 
     `Task Manager <about:performance>`_
       `about:performance <about:performance>`_
@@ -44,12 +46,14 @@ Here's an example of actual output (reformatted for readability)::
       </head>
       <body>
         <ul>
-          <li>9 tabs</li>
-          <li>Date: Mon Oct 14 2019 11:55:30 GMT-0400 (Eastern Daylight Time)</li>
-          <li>ISO date: 2019-10-14T15:55:30.314Z</li>
-          <li>Locale date: 10/14/2019, 11:55:30 AM</li>
-          <li>JSON date: 2019-10-14T15:55:30.314Z</li>
-          <li>Unix timestamp: 1571068530314</li>
+          <li>7 tabs</li>
+          <li>User agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0</li>
+          <li>Date: Mon Oct 14 2019 20:08:24 GMT-0400 (Eastern Daylight Time)</li>
+          <li>ISO date: 2019-10-15T00:08:24.823Z</li>
+          <li>Locale date: 10/14/2019, 8:08:24 PM</li>
+          <li>JSON date: 2019-10-15T00:08:24.823Z</li>
+          <li>YYYY-MM-DD (local): 2019-10-14</li>
+          <li>Milliseconds since Unix epoch: 1571098104823</li>
         </ul>
         <dl>
           <dt>
