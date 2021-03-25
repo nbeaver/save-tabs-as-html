@@ -14,3 +14,6 @@
 - [ ] Indent/format downloaded HTML to make grepping easier.
   - <https://stackoverflow.com/questions/45046868/serializing-dynamically-created-html-with-indentation>
   - <https://stackoverflow.com/questions/376373/pretty-printing-xml-with-javascript/>
+- [ ] Include favicons.
+  - <https://stackoverflow.com/questions/2057636/get-websites-favicon-with-js>
+  - <https://stackoverflow.com/questions/1990475/how-can-i-retrieve-the-favicon-of-a-website-with-xslt-or-jsp>
