@@ -11,6 +11,6 @@
 
 - [ ] Make the title more specific than just "browser tabs"
 - [ ] Include tab.id / tab.index?
-- [ ] Indent/format downloaded HTML.
+- [ ] Indent/format downloaded HTML to make grepping easier.
   - <https://stackoverflow.com/questions/45046868/serializing-dynamically-created-html-with-indentation>
   - <https://stackoverflow.com/questions/376373/pretty-printing-xml-with-javascript/>
