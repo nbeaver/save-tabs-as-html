@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!--
+  Copyright (c) 2019 Nathaniel Morck Beaver
+  This work is licensed under a Creative Commons Zero License.
+  https://creativecommons.org/share-your-work/public-domain/cc0
+  -->
+  <!-- White background for dark themes -->
+  <rect width="100%" height="100%" fill="white"/>
+  <!-- Base with edges -->
+  <polyline points="30 130 30 170 170 170 170 130" stroke="black" fill="white" stroke-width="25"/>
+  <!-- Tip of arrow -->
+  <polyline points="45 65 100 120 155 65" stroke="black" fill="white" stroke-width="25"/>
+  <!-- Stem of arrow -->
+  <rect x="90" y="15" width="20" height="100" stroke="black" fill="black" stroke-width="5"/>
+</svg>
