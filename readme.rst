@@ -43,7 +43,7 @@ Here's an example of actual output (reformatted for readability)::
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
-        <title>browser tabs</title>
+        <title>7 browser tabs</title>
         <meta charset="utf-8" />
       </head>
       <body>

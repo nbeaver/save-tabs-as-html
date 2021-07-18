@@ -9,7 +9,7 @@
 
 # May or may not do.
 
-- [ ] Make the title more specific than just "browser tabs"
+- [x] Make the title more specific than just "browser tabs"
 - [ ] Include tab.id / tab.index?
 - [ ] Indent/format downloaded HTML to make grepping easier.
   - <https://stackoverflow.com/questions/45046868/serializing-dynamically-created-html-with-indentation>
