@@ -2,7 +2,7 @@
   "name": "Save tabs as HTML",
   "description": "Save list of open tabs as an HTML file.",
   "manifest_version": 2,
-  "version": "0.1",
+  "version": "0.2",
   "icons": {
     "48": "icons/icon.svg",
     "96": "icons/icon.svg"
