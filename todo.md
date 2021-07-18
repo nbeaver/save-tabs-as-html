@@ -1,6 +1,7 @@
 # Likely to do.
 
 - [x] Find a suitable icon.
+- [ ] Add whitespace between tabs to make the icon more clear at low resolution
 - [x] Use `serializeToString` instead of `outerHTML`
   - <https://stackoverflow.com/questions/817218/how-to-get-the-entire-document-html-as-a-string>
 - [x] Skip private tabs (`tab.incognito == true`).
