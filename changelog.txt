@@ -1,0 +1,2 @@
+version 0.2 release notes: 
+New icon and title now includes tab count.
