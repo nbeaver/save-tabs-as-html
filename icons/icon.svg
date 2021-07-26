@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="256" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <!--
   Copyright (c) 2019 Nathaniel Morck Beaver
   This work is licensed under a Creative Commons Zero License.
@@ -8,13 +8,13 @@
   <!-- White background for dark themes -->
   <rect width="100%" height="100%" fill="white"/>
 
-  <rect x="10" y="10" width="90" height="70" rx="15" stroke="black" fill="black" stroke-width="5"/>
-  <rect x="110" y="10" width="40" height="70" rx="15" stroke="black" fill="black" stroke-width="5"/>
+  <rect x="10" y="10" width="110" height="100" rx="15" stroke="black" fill="black" stroke-width="5"/>
+  <rect x="142" y="10" width="50" height="100" rx="15" stroke="black" fill="black" stroke-width="5"/>
   <!-- Plus sign -->
-  <rect x="172.5" y="30" width="5" height="30" stroke="black" fill="black" stroke-width="5"/>
-  <rect x="160" y="42.5" width="30" height="5" stroke="black" fill="black" stroke-width="5"/>
+  <rect x="230" y="40" width="5" height="40" stroke="black" fill="black" stroke-width="5"/>
+  <rect x="212" y="58" width="40" height="5" stroke="black" fill="black" stroke-width="5"/>
   <!-- Tip of arrow -->
-  <polyline points="45,115 100,170 155,115" stroke="black" fill="white" stroke-width="25"/>
+  <polyline points="64,166 128,230 192,166" stroke="black" fill="white" stroke-width="32"/>
   <!-- Stem of arrow -->
-  <rect x="90" y="95" width="20" height="70" stroke="black" fill="black" stroke-width="5"/>
+  <rect x="120" y="132" width="20" height="70" stroke="black" fill="black" stroke-width="16"/>
 </svg>
