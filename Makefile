@@ -5,7 +5,7 @@ all : $(ZIP)
 
 .PHONY: $(ZIP)
 $(ZIP): save_tabs.js manifest.json icons/icon.svg
-	zip --quiet $@ $^
+	zip --filesync --quiet $@ $^
 
 readme.html : readme.rst
 	rst2html $< $@
