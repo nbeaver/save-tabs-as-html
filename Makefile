@@ -3,6 +3,7 @@ ZIP :=save_tabs_html.zip
 .PHONY : all
 all : $(ZIP)
 
+.PHONY: $(ZIP)
 $(ZIP): save_tabs.js manifest.json icons/icon.svg
 	zip --quiet $@ $^
 
