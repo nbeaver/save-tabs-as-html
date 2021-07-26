@@ -57,7 +57,7 @@ function tabsToHTML(tabs, now) {
     };
     allTabs.push(tabInfo);
   }
-  var doc = document.implementation.createHTMLDocument(allTabs.length + 'browser tabs');
+  var doc = document.implementation.createHTMLDocument(allTabs.length + ' browser tabs');
   // https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createHTMLDocument
   // creates html, head, title, and body
 
