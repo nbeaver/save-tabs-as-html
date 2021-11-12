@@ -1,0 +1,12 @@
+Single purpose:
+Save the title and URLs of open tabs as an HTML file.
+
+Permission justification:
+
+tabs justification:
+The purpose is to export titles and URLs of tabs.
+
+downloads justification:
+The purpose is to save the titles and URLs as an HTML file.
+
+Data usage: none
