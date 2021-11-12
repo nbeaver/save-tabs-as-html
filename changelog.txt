@@ -1,5 +1,8 @@
 version 0.2 release notes: 
 New icon and title now includes tab count.
 
-version 0.21. release notes:
+version 0.2.1 release notes:
+Tweaked icon, add space between tab count and 'browser tabs' in title.
+
+version 0.3 release notes:
 Tweaked icon, add space between tab count and 'browser tabs' in title.
