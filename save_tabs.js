@@ -1,6 +1,5 @@
 function mainAction() {
-  var querying = browser.tabs.query({});
-  querying.then(saveTabs, onError);
+  browser.tabs.query({}, saveTabs);
 }
 
 function onError(error) {
@@ -123,6 +122,15 @@ function tabsToHTML(tabs, now) {
   doc.body.appendChild(newUnorderedList);
   doc.body.appendChild(newDescriptionList);
   return doc;
+}
+
+if (typeof browser === "undefined") {
+  // Chrome or Chromium.
+  console.log("Chromium");
+  var browser = chrome;
+} else {
+  // Firefox.
+  console.log("Firefox");
 }
 
 browser.browserAction.onClicked.addListener(mainAction);
