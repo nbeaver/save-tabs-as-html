@@ -4,7 +4,7 @@ ZIP :=save_tabs_html.zip
 all : $(ZIP)
 
 .PHONY: $(ZIP)
-$(ZIP): save_tabs.js manifest.json icons/icon.svg
+$(ZIP): save_tabs.js manifest.json icons/icon128.png icons/icon96.png icons/icon64.png icons/icon48.png icons/icon32.png icons/icon16.png
 	zip --filesync --quiet $@ $^
 
 readme.html : readme.rst
