@@ -6,3 +6,6 @@ Tweaked icon, add space between tab count and 'browser tabs' in title.
 
 version 0.3 release notes:
 Tweaked icon, add space between tab count and 'browser tabs' in title.
+
+version 0.3.1 release notes:
+Chromium compatibility, PNG icons.
