@@ -1,5 +1,16 @@
 # Likely to do.
 
+- [ ] CSS styling: take out underlining and add spacing:
+
+    <style type="text/css">
+    a {
+      text-decoration: none;
+    }
+    dt {
+      margin-top: 10px;
+    }
+    </style>
+
 - [x] Find a suitable icon.
 - [ ] Add whitespace between tabs to make the icon more clear at low resolution
 - [x] Use `serializeToString` instead of `outerHTML`
