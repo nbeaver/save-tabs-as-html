@@ -5,6 +5,8 @@ similar to the `Netscape bookmark format`_.
 
 https://addons.mozilla.org/en-US/firefox/addon/save-tabs-to-html-file/
 
+https://chrome.google.com/webstore/detail/save-tabs-as-html/dmnhgbenglfffoaodbgpfoihfnbdbfcb
+
 The idea is to turn browser tabs into an HTML document
 that looks something like this:
 
