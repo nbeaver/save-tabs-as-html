@@ -11,6 +11,7 @@
     }
     </style>
 
+- [ ] Manually tweak PNG icons, especially at low resolution.
 - [x] Find a suitable icon.
 - [ ] Add whitespace between tabs to make the icon more clear at low resolution
 - [x] Use `serializeToString` instead of `outerHTML`
