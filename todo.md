@@ -1,5 +1,18 @@
 # Likely to do.
 
+- [ ] Why did this happen?
+
+    <style>
+    <![CDATA[
+    a {
+    text-decoration: none;
+    }
+    dt {
+    margin-top: 10px;
+    }
+    ]]>
+    </style>
+
 - [ ] Update screenshots for new CSS styling.
 - [x] CSS styling: take out underlining and add spacing:
 
