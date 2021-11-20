@@ -62,7 +62,12 @@ function tabsToHTML(tabs, now) {
 
   var newMeta = document.createElement('meta');
   newMeta.setAttribute('charset', 'utf-8');
+
+  var newStyle = document.createElement('style')
+  newStyle.innerHTML = "\na {\ntext-decoration: none;\n}\ndt {\nmargin-top: 10px;\n}\n"
+
   doc.head.appendChild(newMeta);
+  doc.head.appendChild(newStyle);
 
   var newUnorderedList = document.createElement('ul');
 
