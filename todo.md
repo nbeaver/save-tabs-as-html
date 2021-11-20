@@ -1,6 +1,6 @@
 # Likely to do.
 
-- [ ] CSS styling: take out underlining and add spacing:
+- [x] CSS styling: take out underlining and add spacing:
 
     <style type="text/css">
     a {
