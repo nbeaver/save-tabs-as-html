@@ -1,5 +1,6 @@
 # Likely to do.
 
+- [ ] Update screenshots for new CSS styling.
 - [x] CSS styling: take out underlining and add spacing:
 
     <style type="text/css">
