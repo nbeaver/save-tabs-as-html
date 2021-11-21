@@ -56,16 +56,17 @@ function tabsToHTML(tabs, now) {
     };
     allTabs.push(tabInfo);
   }
-  var doc = document.implementation.createHTMLDocument(allTabs.length + ' browser tabs');
+  var doc = document.implementation.createHTMLDocument(
+    allTabs.length + ' browser tabs');
   // https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createHTMLDocument
   // creates html, head, title, and body
 
   var newMeta = document.createElement('meta');
   newMeta.setAttribute('charset', 'utf-8');
 
-  var newStyle = document.createElement('style')
-  newStyle.setAttribute('type', 'text/css')
-  newStyle.innerHTML = "\na {\ntext-decoration: none;\n}\ndt {\nmargin-top: 10px;\n}\n"
+  var newStyle = document.createElement('style');
+  newStyle.setAttribute('type', 'text/css');
+  newStyle.innerHTML = 'a { text-decoration: none; } dt { margin-top: 10px; } ';
 
   doc.head.appendChild(newMeta);
   doc.head.appendChild(newStyle);
@@ -130,13 +131,13 @@ function tabsToHTML(tabs, now) {
   return doc;
 }
 
-if (typeof browser === "undefined") {
+if (typeof browser === 'undefined') {
   // Chrome or Chromium.
-  console.log("Chromium");
+  console.log('Chromium');
   var browser = chrome;
 } else {
   // Firefox.
-  console.log("Firefox");
+  console.log('Firefox');
 }
 
 browser.browserAction.onClicked.addListener(mainAction);
