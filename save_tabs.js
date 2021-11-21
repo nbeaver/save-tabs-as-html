@@ -132,12 +132,11 @@ function tabsToHTML(tabs, now) {
 }
 
 if (typeof browser === 'undefined') {
-  // Chrome or Chromium.
-  console.log('Chromium');
+  // For compatibility with Chrome or Chromium,
+  // make the 'browser' namespace a copy of the 'chrome' namespace.
   var browser = chrome;
-} else {
-  // Firefox.
-  console.log('Firefox');
+  // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Build_a_cross_browser_extension
+  // https://stackoverflow.com/questions/45985198/the-best-practice-to-detect-whether-a-browser-extension-is-running-on-chrome-or
 }
 
 browser.browserAction.onClicked.addListener(mainAction);
