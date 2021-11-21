@@ -64,6 +64,7 @@ function tabsToHTML(tabs, now) {
   newMeta.setAttribute('charset', 'utf-8');
 
   var newStyle = document.createElement('style')
+  newStyle.setAttribute('type', 'text/css')
   newStyle.innerHTML = "\na {\ntext-decoration: none;\n}\ndt {\nmargin-top: 10px;\n}\n"
 
   doc.head.appendChild(newMeta);
