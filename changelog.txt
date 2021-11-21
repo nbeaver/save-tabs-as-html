@@ -9,3 +9,9 @@ Chromium compatibility, PNG icons.
 
 version 0.3.2 release notes:
 Style HTML for better readability.
+
+version 0.3.3 release note:
+Add type to style tag for standards-conformance.
+
+version 0.3.4 release notes:
+Suppress unnecessary console output.
