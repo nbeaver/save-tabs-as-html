@@ -44,3 +44,4 @@
 - [ ] Include favicons.
   - <https://stackoverflow.com/questions/2057636/get-websites-favicon-with-js>
   - <https://stackoverflow.com/questions/1990475/how-can-i-retrieve-the-favicon-of-a-website-with-xslt-or-jsp>
+- [ ] Set up reproducible builds.
