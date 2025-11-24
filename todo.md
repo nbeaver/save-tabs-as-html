@@ -1,5 +1,7 @@
 # Likely to do.
 
+- [ ] Add CSS for dark mode
+- [ ] Tweak CSS to add a little space between each entry
 - [ ] Why did this happen?
 
     <style>
@@ -37,6 +39,7 @@
 # May or may not do.
 
 - [x] Make the title more specific than just "browser tabs"
+- [ ] Allow invoking from context menu by selecting multiple tabs and right-clicking so a subset of tabs can be saved instead of all of them
 - [ ] Include tab.id / tab.index?
 - [ ] Indent/format downloaded HTML to make grepping easier.
   - <https://stackoverflow.com/questions/45046868/serializing-dynamically-created-html-with-indentation>
