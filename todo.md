@@ -1,5 +1,8 @@
 # Likely to do.
 
+- [ ] Make output customizable
+  - https://github.com/nbeaver/save-tabs-as-html/issues/1
+  - e.g. like https://github.com/garoose/copy-message-id/blob/master/options/options.html
 - [ ] Add CSS for dark mode
 - [ ] Tweak CSS to add a little space between each entry
 - [ ] Why did this happen?
