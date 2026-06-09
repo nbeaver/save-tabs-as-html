@@ -13,9 +13,33 @@ readme.html : readme.rst
 todo.html : todo.md
 	markdown $< > $@
 
-.PHONY : lint
-lint :
-	gjslint --nojsdoc save_tabs.js
+.PHONY: eslint
+eslint: lint-js
+
+.PHONY: lint-js
+lint-js:
+	npm exec -- eslint "**/*.js"
+
+.PHONY: web-ext-lint
+web-ext-lint :
+	npm exec -- web-ext lint
+
+.PHONY: lint-web-ext
+lint-web-ext: web-ext-lint
+
+.PHONY: install-npm
+install-npm:
+	npm clean-install
+	# npm install web-ext eslint globals
+
+.PHONY: outdated-npm
+outdated-npm:
+	npm outdated
+
+.PHONY: update-npm
+update-npm:
+	npm update
+
 
 .PHONY : clean
 clean :
