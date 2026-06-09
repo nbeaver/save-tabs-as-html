@@ -3,3 +3,4 @@ readme.html
 todo.html
 *.zip
 node_modules/
+web-ext-artifacts/
