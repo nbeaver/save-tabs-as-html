@@ -28,7 +28,7 @@ function saveTabs(tabs) {
   var payloadBlob = new Blob([HTMLString], {type: 'text/html'});
   var payloadURL = URL.createObjectURL(payloadBlob);
   var payload_filename = getFilename(now);
-  var downloading = browser.downloads.download({
+  browser.downloads.download({
     url: payloadURL,
     filename: payload_filename,
     conflictAction: 'uniquify',
