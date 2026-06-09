@@ -1,15 +1,12 @@
 {
-  "name": "Save tabs as HTML",
-  "description": "Save list of open tabs as an HTML file.",
-  "manifest_version": 2,
-  "version": "0.4.0",
-  "icons": {
-    "16":  "icons/icon16.png",
-    "32":  "icons/icon32.png",
-    "48":  "icons/icon48.png",
-    "64":  "icons/icon64.png",
-    "96":  "icons/icon96.png",
-    "128": "icons/icon128.png"
+  "action": {
+    "default_icon": "icons/icon128.png",
+    "default_title": "Save tabs as HTML."
+  },
+  "background": {
+    "scripts": [
+      "save_tabs.js"
+    ]
   },
   "browser_specific_settings": {
     "gecko": {
@@ -21,15 +18,20 @@
       "id": "{9b38f22d-43f6-42d8-b18d-e4173ce1fae4}"
     }
   },
+  "description": "Save list of open tabs as an HTML file.",
   "host_permissions": [
     "tabs",
     "downloads"
   ],
-  "action": {
-    "default_icon": "icons/icon128.png",
-    "default_title": "Save tabs as HTML."
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "64": "icons/icon64.png",
+    "96": "icons/icon96.png"
   },
-  "background": {
-    "scripts": ["save_tabs.js"]
-  }
+  "manifest_version": 3,
+  "name": "Save tabs as HTML",
+  "version": "0.4.0"
 }
