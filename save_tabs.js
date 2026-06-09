@@ -2,10 +2,6 @@ function mainAction() {
   browser.tabs.query({}, saveTabs);
 }
 
-function onError(error) {
-  console.log(`Error : ${error}`);
-}
-
 function getDateYYYYMMDD(timestamp) {
   var month_from_one = timestamp.getMonth() + 1;
   var day = timestamp.getDate();
