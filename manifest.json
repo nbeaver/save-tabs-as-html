@@ -19,7 +19,7 @@
     }
   },
   "description": "Save list of open tabs as an HTML file.",
-  "host_permissions": [
+  "permissions": [
     "tabs",
     "downloads"
   ],
