@@ -139,4 +139,4 @@ if (typeof browser === 'undefined') {
   // https://stackoverflow.com/questions/45985198/the-best-practice-to-detect-whether-a-browser-extension-is-running-on-chrome-or
 }
 
-browser.browserAction.onClicked.addListener(mainAction);
+browser.action.onClicked.addListener(mainAction);
