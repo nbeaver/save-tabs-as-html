@@ -2,6 +2,6 @@
   "dependencies": {
     "eslint": "^10.4.1",
     "globals": "^17.6.0",
-    "web-ext": "^10.3.0"
+    "web-ext": "^10.4.0"
   }
 }
