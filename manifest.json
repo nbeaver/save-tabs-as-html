@@ -11,6 +11,16 @@
     "96":  "icons/icon96.png",
     "128": "icons/icon128.png"
   },
+  "browser_specific_settings": {
+    "gecko": {
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      },
+      "id": "{61e28fc4-09a5-4dad-bb05-38ec2681ef86}"
+    }
+  },
   "permissions": [
     "tabs",
     "downloads"
