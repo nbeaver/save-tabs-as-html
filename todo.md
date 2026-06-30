@@ -46,6 +46,11 @@
 ## Addon page
 - [ ] Update screenshots for new CSS styling.
 
+- [ ] New URLs for Chinese language pages
+  - https://www.thomsonreuters.cn/zh.html
+  - https://www.ctee.com.tw/
+  - https://tw.news.yahoo.com/
+
 # May or may not do.
 
 - [ ] Set up reproducible builds.
