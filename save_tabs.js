@@ -62,7 +62,7 @@ function tabsToHTML(tabs, now) {
 
   var newStyle = document.createElement('style');
   newStyle.setAttribute('type', 'text/css');
-  newStyle.innerHTML = 'a { text-decoration: none; } dt { margin-top: 10px; } ';
+  newStyle.innerHTML = 'a { text-decoration: none; } dt { margin-top: 10px; } @media (prefers-color-scheme: dark) { body { background: #242424; color: #FFFFEA; } a:link { color: #80DFFF; } a:visited { color: #FFADFF; } }';
 
   doc.head.appendChild(newMeta);
   doc.head.appendChild(newStyle);
