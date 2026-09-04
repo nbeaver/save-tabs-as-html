@@ -15,3 +15,6 @@ Add type to style tag for standards-conformance.
 
 version 0.3.4 release notes:
 Suppress unnecessary console output.
+
+version 0.3.6 release notes:
+HTML files now support CSS dark mode.
