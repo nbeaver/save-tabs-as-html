@@ -6,7 +6,7 @@
   - e.g. like https://github.com/garoose/copy-message-id/blob/master/options/options.html
 
 ## HTML output
-- [ ] Add CSS for dark mode
+- [x] Add CSS for dark mode
 - [ ] Tweak CSS to add a little space between each entry
 - [ ] Why did this happen?
 
